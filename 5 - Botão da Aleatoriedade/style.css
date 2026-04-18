@@ -1,0 +1,40 @@
+.rgb {
+  animation: coresRGB 2s infinite;
+}
+
+@keyframes coresRGB {
+  0% { color: red; }
+  16.6% { color: rgb(255, 115, 0); }
+  33.2% { color: rgb(251, 255, 0); }
+  49.8% { color: rgb(0, 255, 13); }
+  66.4%  { color: rgb(60, 60, 253); }
+  83% { color: pink; }
+  99.6% { color: rgb(139, 25, 139); }
+  
+}
+.span {
+  color: red;
+}
+body {
+  background: black;
+  text-align: center;
+}
+h1 {
+  color:white;
+  margin-top: 20px
+}
+.botao {
+  animation: coresRGB 2s infinite;
+  background: red;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid;
+  margin-top: 45px;
+  font-weight: 800;
+}
+p {
+  font-size: 20px;
+  color:white;
+}
