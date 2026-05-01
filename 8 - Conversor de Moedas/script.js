@@ -11,6 +11,7 @@ function convertValues() {
     const libraToday = 6.8;
     const ieneToday = 0.05;
     const bitcoinToday = 150000.0;
+    const wonToday = 0.1;
 
     if (currencySelect.value == 'dolar') {
         currencyValueConverted.innerHTML = new Intl.NumberFormat('en-US', {
@@ -41,6 +42,13 @@ function convertValues() {
             style: 'currency',
             currency: 'BTC'
         }).format(inputCurrencyValue / bitcoinToday);
+    }
+
+    if (currencySelect.value == 'won') {
+        currencyValueConverted.innerHTML = new Intl.NumberFormat('ko-KR', {
+            style: 'currency',
+            currency: 'KRW'
+        }).format(inputCurrencyValue / wonToday);
     }
 
     currencyValueToConvert.innerHTML = new Intl.NumberFormat('pt-BR', {
@@ -79,6 +87,12 @@ function changeCurrency() {
         currencyName.innerHTML = 'Bitcoin';
         currencyImg.src = './Bitcoin.png';
     }
+
+    if (currencySelect.value == 'won') {
+        currencyName.innerHTML = 'Won Sul-Coreano';
+        currencyImg.src = './won.webp';
+    }
+
 
     convertValues();
 }
