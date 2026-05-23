@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpô</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Jokenpô</h1>
+
+        <div class="opponent-input" id="opponent-input-wrapper">
+            <input id="opponent-name-input" type="text" placeholder="Nome do adversário" />
+            <button id="set_button" type="button" onclick="setOpponentName()">Definir adversário</button>
+        </div>
+
+        <div class="buttons">
+            <button id="rock" onclick="playHuman('rock')">⛰️</button>
+            <button id="paper" onclick="playHuman('paper')">📜</button>
+            <button id="scissors" onclick="playHuman('scissors')">✂️</button>
+        </div>
+
+        <p class="result"></p>
+
+        <p class="player-score">Sua Pontuação: <span id="human-score">0</span></p>
+        <p class="machine-score"><span id="machine-score-label">Pontuação da Máquina</span>: <span id="machine-score">0</span></p>
+        <button type="button" id="change-opponent-button" onclick="openOpponentInput()" style="display: none;">Trocar nome</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("https://picsum.photos/1920/1080");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.buttons {
+    margin: 40px 0;
+    display: flex;
+    gap: 40px;
+}
+
+button {
+    padding: 20px;
+    font-size: 60px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    transition: transform 0.1s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    opacity: .8;
+    font-size: 65px;
+}
+
+button:active {
+    opacity: .7;
+    font-size: 60px;
+}
+
+#change-opponent-button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #333;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: none;
+}
+
+#change-opponent-button:hover {
+    transform: none;
+    opacity: 0.9;
+}
+
+#change-opponent-button:active {
+    opacity: 0.8;
+}
+
+#opponent-name-input {
+    font-size: 30px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+#set_button {
+    margin-top: 15px;
+    padding: 8px 10px;
+    font-size: 18px;
+    border-radius: 12px;
+    width: auto;
+    display: flex;
+    margin: auto;
+
+}
+
+#rock {
+    background-color: deepskyblue;
+    box-shadow: 0px 5px 40px rgb(0, 126, 168);
+}
+
+#paper {
+    background-color: burlywood;
+    box-shadow: 0px 5px 40px rgb(219, 137, 30);
+}
+
+#scissors {
+    background-color: lightcoral;
+    box-shadow: 0px 5px 40px rgb(243, 66, 66);
+}
+
+p {
+    font-weight: bold ;
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.player-score span {
+    color: royalblue;
+}
+
+.machine-score span {
+    color: crimson;
+}
+
+#opponent-name-input {
+    text-align: center;
+}
+
+#opponent-name-input::placeholder {
+    text-align: center;
+}
+
+@media screen and (max-width: 515px) {
+    .container {
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    margin: 40px 0;
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding: 10px;
+    font-size: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    transition: transform 0.1s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    opacity: .8;
+    font-size: 45px;
+}
+
+button:active {
+    opacity: .7;
+    font-size: 40px;
+}
+
+#change-opponent-button {
+    margin-top: 5px;
+    padding: 6px 10px;
+    font-size: 10px;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #333;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: none;
+}
+
+#opponent-name-input {
+    font-size: 12px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#set_button {
+    margin-top: 10px;
+    padding: 6px 8px;
+    font-size: 14px;
+    border-radius: 12px;
+    width: auto;
+    display: flex;
+    margin: auto;
+}
+
+p {
+    font-weight: bold ;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+}
